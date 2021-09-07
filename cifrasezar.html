@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador</title>
+
+    
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+
+</head>
+
+<body>
+
+<div class="principal">  
+<h1>Decodificador</h1>  
+<p>Decodifica em cesar e base64</p>
+   
+    <form >
+        <input type="text" name="frase" value="" id="texto" >
+    </form>
+
+    <input  type = "number" id = "selecionador" name = "metodo" min="1" max="10000">
+    <label for = "met1"></label>  
+        
+    <div>
+        
+        <select id="options">
+        <option>Selecione</option>
+        <option value="1" >Cifra César</option>
+        <option value="64" >Base64</option>
+        </select>    
+        
+    </div>
+
+    <div>
+        <input  type = "radio" id = "cri" name = "metodo" value = "true">
+        <label  for = "met1">Criptografar</label>       
+
+        <input type = "radio" id = "decri" name = "metodo" value = "true">
+        <label  for = "met1">Decriptografar</label>  
+
+    </div>
+
+        
+     <div><p id="result"></p> </div>
+
+     <div id="submit">Aplicar</div> 
+</div>
+
+</body>
+</html>
